@@ -29,6 +29,25 @@ h1, h2, h3 {
 
 }
 
+.navbar-default .navbar-brand {
+  color: white; //This turns the devmatch on the top left to white
+}
+
+.navbar-default .navbar-nav > li > a{
+  color: white; //Turn the about link white
+}
+
+.navbar-default .navbar-brand:hover{
+  color: white;
+  opacity: 0.75; //This change the color of the devmatch on the top left when hover over
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+  color: white;
+  opacity: 0.75; 
+}
+
+
 .navbar {
   border: none;
 }
