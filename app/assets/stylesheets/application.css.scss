@@ -17,10 +17,12 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+//Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif
 }
 
+//Background Gradient
 .navbar, .home-callout{
   //Gradient provide by https://twitter.com/_ighosh at UIGradients.com
   background: #00c6ff;  /* fallback for old browsers */
@@ -29,29 +31,21 @@ h1, h2, h3 {
 
 }
 
-.navbar-default .navbar-brand {
-  color: white; //This turns the devmatch on the top left to white
-}
-
+//Navbar styles
+.navbar-default .navbar-brand, //Nest Sass statment, change color and hover color of the links on the top. Nesting does not work in CSS 
 .navbar-default .navbar-nav > li > a{
-  color: white; //Turn the about link white
-}
-
-.navbar-default .navbar-brand:hover{
   color: white;
-  opacity: 0.75; //This change the color of the devmatch on the top left when hover over
+  &:hover {
+    color: white;
+    opacity: 0.75;
+  }
 }
-
-.navbar-default .navbar-nav > li > a:hover{
-  color: white;
-  opacity: 0.75; 
-}
-
 
 .navbar {
   border: none;
 }
 
+//homepage styles
 .home-callout {
     color: white;
     margin-top: -20px;
