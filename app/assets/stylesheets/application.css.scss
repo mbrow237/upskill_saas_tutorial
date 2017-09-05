@@ -17,6 +17,9 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 //Typography Styles
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif
@@ -32,7 +35,7 @@ h1, h2, h3 {
 }
 
 //Navbar styles
-.navbar-default .navbar-brand, //Nest Sass statment, change color and hover color of the links on the top. Nesting does not work in CSS 
+.navbar-default .navbar-brand, //Nest SCSS statment, change color and hover color of the links on the top. Nesting does not work in CSS 
 .navbar-default .navbar-nav > li > a{
   color: white;
   &:hover {
