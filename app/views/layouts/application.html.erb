@@ -21,12 +21,17 @@
           <span class="icon-bar"></span>
         
         </button>
-        <a href="/" class="navbar-brand"><i class="fa fa-group"></i>Dev Match</a>
+        
+        <%= link_to "/", class: "navbar-brand" do %> <!-- ruby code injection. Links to home page as well as nested code to add both icon and text -->
+          <i class="fa fa-group"></i>
+          DevMatch
+        <% end %>
+      
       </div>
      
       <div class="collapse navbar-collapse" id="main-nav-collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/about">About</a></li>
+          <li><%= link_to "About", "/about" %></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div>
