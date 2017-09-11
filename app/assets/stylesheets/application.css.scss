@@ -34,8 +34,8 @@ h1, h2, h3 {
 
 }
 
-//Navbar styles
-.navbar-default .navbar-brand, //Nest SCSS statment, change color and hover color of the links on the top. Nesting does not work in CSS 
+//Nav styles
+.navbar-default .navbar-brand, //Nested SCSS statment, change color and hover color of the links on the top. Nesting does not work in CSS 
 .navbar-default .navbar-nav > li > a{
   color: white;
   &:hover {
@@ -52,6 +52,18 @@ h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
 }
+
+.navbar-default .navbar-toggle .icon-bar{ //iron bars on hamburger button
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle{ //Nested SASS statement. For hamburger button that shows on smaller screens. This change it's color to white and change it's hover/click state to blue
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #00c6ff;
+  }
+}
+
 
 //homepage styles
 .home-callout {
