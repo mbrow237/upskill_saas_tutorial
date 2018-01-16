@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
     def new
-        @contact = Contact.new
+        @contact = Contact.new #loads new page from contact view folder
     end       
     
     def create
